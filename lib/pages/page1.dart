@@ -55,7 +55,7 @@ class Login extends StatelessWidget {
               ),
               Container(
                 // padding: EdgeInsets.symmetric(vertical: 200),
-                margin: EdgeInsets.only(top: 480),
+                margin: EdgeInsets.only(top: 470),
                 width: double.infinity,
                 child: Column(
                   children: [
@@ -80,7 +80,7 @@ class Login extends StatelessWidget {
                 ),
               ),
               Container(
-                margin: EdgeInsets.only(top: 420),
+                margin: EdgeInsets.only(top: 410),
                 // padding: EdgeInsets.symmetric(vertical: 200),
                 width: double.infinity,
                 child: Column(
@@ -105,11 +105,11 @@ class Login extends StatelessWidget {
                 ),
               ),
               Container(
-                margin: EdgeInsets.only(top: 540),
+                margin: EdgeInsets.only(top: 530),
                 // padding: EdgeInsets.symmetric(vertical: 200),
 
                 width: double.infinity,
-                height: 50,
+                height: 70,
                 alignment: Alignment.center,
                 child: Column(
                   children: [
@@ -133,6 +133,24 @@ class Login extends StatelessWidget {
                                   borderRadius: BorderRadius.circular(20))),
                           backgroundColor:
                               MaterialStateProperty.all(Color(0xffa511fb))),
+                    ),
+                    SizedBox(
+                      height: 10,
+                    ),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Text("don't have an account ? "),
+                        GestureDetector(
+                          onTap: () {
+                            Navigator.pushNamed(context, '/signup');
+                          },
+                          child: Text(
+                            "Sign up",
+                            style: TextStyle(fontWeight: FontWeight.bold),
+                          ),
+                        ),
+                      ],
                     ),
                   ],
                 ),

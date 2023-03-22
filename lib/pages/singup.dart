@@ -41,19 +41,16 @@ class Singup extends StatelessWidget {
               Positioned.fill(
                 child: Align(
                   alignment: Alignment.topCenter,
-                  child: Padding(
-                    padding: EdgeInsets.only(top: 50),
-                    child: Image.asset(
-                      "assets/signup.png",
-                      width: 200,
-                      height: 400,
-                    ),
+                  child: Image.asset(
+                    "assets/signup.png",
+                    width: 200,
+                    height: 300,
                   ),
                 ),
               ),
               Container(
                 // padding: EdgeInsets.symmetric(vertical: 200),
-                margin: EdgeInsets.only(top: 500),
+                margin: EdgeInsets.only(top: 350),
                 width: double.infinity,
                 child: Column(
                   children: [
@@ -78,7 +75,7 @@ class Singup extends StatelessWidget {
                 ),
               ),
               Container(
-                margin: EdgeInsets.only(top: 440),
+                margin: EdgeInsets.only(top: 290),
                 // padding: EdgeInsets.symmetric(vertical: 200),
                 width: double.infinity,
                 child: Column(
@@ -103,36 +100,11 @@ class Singup extends StatelessWidget {
                 ),
               ),
               Container(
-                margin: EdgeInsets.only(top: 380),
-                // padding: EdgeInsets.symmetric(vertical: 200),
-                width: double.infinity,
-                child: Column(
-                  children: [
-                    Container(
-                      padding: EdgeInsets.symmetric(horizontal: 10),
-                      decoration: BoxDecoration(
-                          color: Color(0xffedcbff),
-                          borderRadius: BorderRadius.circular(20)),
-                      width: 266,
-                      child: TextField(
-                        decoration: InputDecoration(
-                          border: InputBorder.none,
-                          hintText: "Username :",
-                          icon: Icon(Icons.person),
-                        ),
-                        keyboardType: TextInputType.emailAddress,
-                        obscureText: false,
-                      ),
-                    ),
-                  ],
-                ),
-              ),
-              Container(
-                margin: EdgeInsets.only(top: 560),
+                margin: EdgeInsets.only(top: 410),
                 // padding: EdgeInsets.symmetric(vertical: 200),
 
                 width: double.infinity,
-                height: 50,
+
                 alignment: Alignment.center,
                 child: Column(
                   children: [
@@ -157,6 +129,129 @@ class Singup extends StatelessWidget {
                           backgroundColor:
                               MaterialStateProperty.all(Color(0xffa511fb))),
                     ),
+                    SizedBox(
+                      height: 10,
+                    ),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Text("dont have an account ? "),
+                        GestureDetector(
+                          onTap: () {
+                            Navigator.pushNamed(context, '/login');
+                          },
+                          child: Text(
+                            "Sign in",
+                            style: TextStyle(fontWeight: FontWeight.bold),
+                          ),
+                        ),
+                      ],
+                    ),
+                    SizedBox(
+                      height: 20,
+                    ),
+                    SizedBox(
+                      width: 280,
+                      child: Row(
+                        children: [
+                          Expanded(
+                            child: Divider(
+                              height: 9,
+                              thickness: 1,
+                              color: Colors.purple[900],
+                            ),
+                          ),
+                          Text(
+                            "OR",
+                            style: TextStyle(color: Colors.purple[900]),
+                          ),
+                          Expanded(
+                            child: Divider(
+                              height: 9,
+                              thickness: 1,
+                              color: Colors.purple[900],
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                    SizedBox(
+                      height: 20,
+                    ),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        GestureDetector(
+                          onTap: () {},
+                          child: Container(
+                            padding: EdgeInsets.all(13),
+                            decoration: BoxDecoration(
+                                shape: BoxShape.circle,
+                                border: Border.all(
+                                    color: Color(0xffa511fb), width: 1)),
+                            child: Positioned.fill(
+                              child: Align(
+                                alignment: Alignment.topCenter,
+                                child: Image.asset(
+                                  "assets/twitter.png",
+                                  width: 33,
+                                  height: 33,
+                                  color: Color(0xffa511fb),
+                                ),
+                              ),
+                            ),
+                          ),
+                        ),
+                        SizedBox(
+                          width: 20,
+                        ),
+                        GestureDetector(
+                          onTap: () {},
+                          child: Container(
+                            padding: EdgeInsets.all(13),
+                            decoration: BoxDecoration(
+                                shape: BoxShape.circle,
+                                border: Border.all(
+                                    color: Color(0xffa511fb), width: 1)),
+                            child: Positioned.fill(
+                              child: Align(
+                                alignment: Alignment.topCenter,
+                                child: Image.asset(
+                                  "assets/facebook.png",
+                                  width: 33,
+                                  height: 33,
+                                  color: Color(0xffa511fb),
+                                ),
+                              ),
+                            ),
+                          ),
+                        ),
+                        SizedBox(
+                          width: 20,
+                        ),
+                        GestureDetector(
+                          onTap: () {},
+                          child: Container(
+                            padding: EdgeInsets.all(13),
+                            decoration: BoxDecoration(
+                                shape: BoxShape.circle,
+                                border: Border.all(
+                                    color: Color(0xffa511fb), width: 1)),
+                            child: Positioned.fill(
+                              child: Align(
+                                alignment: Alignment.topCenter,
+                                child: Image.asset(
+                                  "assets/google-plus.png",
+                                  width: 33,
+                                  height: 33,
+                                  color: Color(0xffa511fb),
+                                ),
+                              ),
+                            ),
+                          ),
+                        ),
+                      ],
+                    )
                   ],
                 ),
               ),
