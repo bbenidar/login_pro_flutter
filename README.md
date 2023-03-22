@@ -6,5 +6,5 @@ This project is a starting point for a Flutter application.
 
 some picture from the app :
 
-[![Watch the video](https://img.youtube.com/vi/T-D1KVIuvjA/maxresdefault.jpg)](https://youtu.be/T-D1KVIuvjA)
+Screen Recording 2023-03-22 at 10.07.34 PM.mov
 
